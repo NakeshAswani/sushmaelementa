@@ -1,0 +1,343 @@
+@media only screen and (min-width: 200px) and (max-width: 575px){
+    .enquireForm{
+        width: 80%;
+    }
+    #enquireNow{
+        font-size: 12px;
+    }
+    #bookNowForm, #downBrochureForm, #priceListForm, #siteFloorForm{
+        width: 80%;
+        height: 98%;
+    }
+    header{
+        background: var(--color6);
+        position: sticky;
+        top: 0px;
+    }
+    .banner{
+        display: none;
+    }
+    .buildAround {
+        margin-bottom: calc(var(--margin-100) - 50px);
+    }
+    .buildAround figure{
+        width: 25%;
+    }
+    .buildAround h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .overview {
+        margin: calc(var(--margin-100) - 50px) 0px;
+    }   
+    .overviewImgs{
+        margin: 0px;
+    }
+    .overview .row .col-lg-6:last-child{
+        padding-top: calc(var(--margin-100) + var(--margin-100) + var(--margin-100) + 50px);
+    }
+    .overview h1 {
+        font-size: 36px;
+    }
+    .overview h1 br{
+        display: none;
+    }
+    .section4{
+        display: none;
+    }
+    .productSec>.row{
+        padding: 50px 12px;
+    }
+    .productSec>.row h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .productSec>.row h1 span{
+        display: inline-block !important;
+    }
+    .productSec>.row article {
+        text-align: center;
+    }
+    .location h1 {
+        font-size: 35px;
+    }
+    .location .col-lg-8 img:nth-child(2){
+        width: 30px;
+        height: 30px;
+    }
+    .location .col-lg-8 figure.locImg{
+        width: 30px;
+        height: 30px;
+    }
+    .location .col-lg-8 figure.locImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .masterPlan {
+        margin-bottom: calc(var(--margin-100) - 50px);
+    }
+    .masterPlan .row{
+        width: 100%;
+        margin: auto;
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 48px;
+    }
+    .masterPlan .row .col-lg-5{
+        border: none !important;
+    }
+    .masterPlan h1 {
+        font-size: 30px;
+    }
+    .gallerySec h1 {
+        font-size: 35px;
+    }
+    .gallSec1 h1 {
+        font-size: 35px;
+    }
+    #gallImgs figure, #loadMoreImgs figure {
+        width: 100%;
+        height: 100%;
+    }
+    #gallImgs figcaption, #loadMoreImgs figcaption {
+        padding: 10px 0px !important;
+    }
+    #gallImgs figcaption article, #loadMoreImgs figcaption article{
+        font-size: 12px;
+    }
+    #gallSlider1 .owl-nav button, #gallSlider2 .owl-nav button, #gallSlider3 .owl-nav button{
+        padding: 10px !important;
+    }
+    .faqSec h1 {
+        font-size: 40px;
+        color: var(--color1);
+    }
+    .faqSec .row{
+        --bs-gutter-y: 48px;
+    }
+    .contactSec h1 {
+        font-size: 35px;
+    }
+    .documents .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerLinks{
+        flex-wrap: wrap;
+    }
+    .footerTop div:nth-child(2) figure{
+        width: 60%;
+        margin: auto;
+    }
+    .footerTop div:nth-child(2) figure img{
+        width: 100%;
+    }
+    .footerTop span a {
+        font-size: 25px;
+    }
+    .footerTop .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerTop .col-lg-3 {
+        border: none !important;
+    }
+    .footerBottom{
+        padding: 24px !important;
+    }
+    .footerBottom .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerBottom .col-lg-9 figure {
+        width: 50%;
+        margin: auto;
+    }
+    .footerBottom .col-lg-9 span:nth-child(2), .footerBottom .col-lg-9 span:nth-child(3){
+        line-height: 26px;
+        font-size: 15px;
+    }
+    .aminitiesMain{
+        padding: var(--margin-100) 0px;
+    }
+    .aminitiesMain .row{
+        width: 100%;
+        margin: auto;
+    }
+    .aminitiesMain h1{
+        font-size: 30px;
+    }
+    .aminitiesBanner h1, .priceBanner h1, .disclaimerBanner h1, .galleryBanner h1 {
+        font-size: 40px;
+    }
+    .priceMain .row{
+        width: 100%;
+        margin: auto;
+        --bs-gutter-y: 24px;
+    }
+    .aminitiesBanner, .galleryBanner, .priceBanner, .disclaimerBanner{
+        height: 80vh;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 991px){
+    .enquireForm{
+        width: 50%;
+    }
+    #bookNowForm, #downBrochureForm, #priceListForm, #siteFloorForm{
+        width: 50%;
+        height: 98%;
+    }
+    header{
+        background: var(--color6);
+        position: sticky;
+        top: 0px;
+    }
+    .banner{
+        display: none;
+    }
+    .buildAround {
+        margin-bottom: calc(var(--margin-100) - 50px);
+    }
+    .buildAround figure{
+        width: 25%;
+    }
+    .buildAround h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .overview {
+        margin: calc(var(--margin-100) - 50px) 0px;
+    }   
+    .overviewImgs{
+        margin: 0px;
+    }
+    .overview .row .col-lg-6:last-child{
+        padding-top: calc(var(--margin-100) - 50px);
+    }
+    .overview h1 {
+        font-size: 50px;
+    }
+    .section4{
+        display: none;
+    }
+    .productSec>.row{
+        padding: 50px 12px;
+    }
+    .productSec>.row h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .productSec>.row h1 span{
+        display: inline-block !important;
+    }
+    .productSec>.row article {
+        text-align: center;
+    }
+    .location .col-lg-8 img:nth-child(2){
+        width: 40px;
+        height: 40px;
+    }
+    .location .col-lg-8 figure.locImg{
+        width: 40px;
+        height: 40px;
+    }
+    .location .col-lg-8 figure.locImg img{
+        width: 100%;
+        height: 100%;
+    }
+    .masterPlan {
+        margin-bottom: calc(var(--margin-100) - 50px);
+    }
+    .masterPlan .row{
+        width: 100%;
+        margin: auto;
+        --bs-gutter-x: 24px;
+        --bs-gutter-y: 48px;
+    }
+    .masterPlan .row .col-lg-5{
+        border: none !important;
+    }
+    .masterPlan h1 {
+        font-size: 40px;
+    }
+    .gallerySec h1 {
+        font-size: 35px;
+    }
+    #gallImgs figure, #loadMoreImgs figure {
+        width: 100%;
+        height: 100%;
+    }
+    .faqSec h1 {
+        font-size: 40px;
+        color: var(--color1);
+    }
+    .faqSec .row{
+        --bs-gutter-y: 48px;
+    }
+    .documents .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerLinks{
+        flex-wrap: wrap;
+    }
+    .footerTop>div:nth-child(2) figure{
+        width: 40%;
+        margin: auto;
+    }
+    .footerTop>div:nth-child(2) figure img{
+        width: 100%;
+    }
+    .footerTop span a {
+        font-size: 25px;
+    }
+    .footerTop .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerTop .col-lg-3 {
+        border: none !important;
+    }
+    .footerTop .col-lg-3 figure{
+        width: 40% !important;
+        margin: auto;
+    }
+    .footerBottom{
+        padding: 24px !important;
+    }
+    .footerBottom .row{
+        --bs-gutter-y: 48px;
+    }
+    .footerBottom .col-lg-3 figure {
+        width: 35%;
+    }
+    .footerBottom .col-lg-9 figure {
+        width: 40%;
+        margin: auto;
+    }
+    .footerBottom .col-lg-9 span:nth-child(2){
+        line-height: 26px;
+    }
+    .aminitiesMain{
+        padding: var(--margin-100) 0px;
+    }
+    .aminitiesMain .row{
+        width: 100%;
+        margin: auto;
+    }
+    .aminitiesMain h1{
+        font-size: 40px;
+    }
+    .aminitiesBanner h1, .priceBanner h1, .disclaimerBanner h1, .galleryBanner h1 {
+        font-size: 40px;
+    }
+    .priceMain .row{
+        width: 100%;
+        margin: auto;
+        --bs-gutter-y: 24px;
+    }
+    .aminitiesBanner, .galleryBanner, .priceBanner, .disclaimerBanner{
+        height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    body {
+        max-width: 1400px;
+        margin: auto;
+    }
+}

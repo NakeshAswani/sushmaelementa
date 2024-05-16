@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home 9 - Sushma Belleza</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div class="text-uppercase py-4 px-2 text-white rounded-start-3 border-end-0 fw-bolder position-fixed end-0 z-2" id="enquireNow">
+            enquire here
+        </div>
+        <div class="overlay"></div>
+        <div class="enquireForm">
+            <div class="modal-header p-3 border-bottom">
+                <button type="button" class="btn-close" id="enquireClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5">
+                <form>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder ">full name <span class="text-danger fw-semibold">*</span></label>
+                        <input type="text" class="w-100 border-0">
+                    </div>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder">email address <span class="text-danger fw-semibold">*</span></label>
+                        <input type="email" class="w-100 border-0">
+                    </div>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder">phone number <span class="text-danger fw-semibold">*</span></label>
+                        <input type="tel" placeholder="+91" class="w-100 border-0">
+                    </div>
+                    <button class="text-capitalize text-white fw-medium py-2 px-3 border-0">enquire now</button>
+                </form>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="downBrochureForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download brochure</h4>
+                <button type="button" class="btn-close" id="downBrochureClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto py-5 px-4 g-4">
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="fw-bolder">I'm interested in</label>
+                        <select class="w-100 px-2">
+                            <option>3 BHK</option>
+                            <option>4 BHK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="priceListForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download price list</h4>
+                <button type="button" class="btn-close" id="priceListClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto p-5 g-4">
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="fw-bolder">message</label>
+                        <textarea class="d-block w-100"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">get quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="siteFloorForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download site & floor plan</h4>
+                <button type="button" class="btn-close" id="siteFloorClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto p-5 g-4">
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="fw-bolder">message</label>
+                        <textarea class="d-block w-100"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">get quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="container-fluid ps-lg-5 pe-lg-0 px-3 z-2">
+            <nav class="navbar navbar-expand-lg align-items-center">
+                <a class="navbar-brand me-5" href="home.html">
+                    <figure class="m-0">
+                        <img src="images/logo.png" alt="logo" class="w-100 h-100">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-uppercase gap-3">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#overview">overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#product">product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="amenities.html">amenities</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#locationMap">location map</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#floorPlans">floor plans</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="gallery.html">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="price-list.html">price list</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#faq">faq</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class='container-fluid disclaimerBanner'>
+            <div class='container h-100 d-flex flex-wrap align-items-center'>
+                <div>
+                    <h1 class='text-uppercase text-white fw-semibold w-100'>privacy policy</h1>
+                    <article class='text-white'>
+                        <a href="home.html" class='text-uppercase text-white text-decoration-none'>home</a>
+                        &nbsp; - &nbsp;
+                        <span class='text-uppercase text-decoration-underline'>
+                            privacy policy
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class='container-fluid disclaimerMain bg-white'>
+            <div class="container">
+                <article class='mb-4'>
+                    If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at in**@su************.com. Our Disclaimer was generated with the help of the Free Disclaimer Generator.
+                </article>
+                <article class="mb-4">
+                    If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.
+                </article>
+                <article class="mb-4">
+                    This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Sushma Belleza. This policy is not applicable to any information collected offline or via channels other than this website.
+                </article>
+                <h2 class='fw-semibold mb-4'>Concent</h2>
+                <article class='mb-4'>
+                    By using our website, you hereby consent to our Privacy Policy and agree to its terms.
+                </article>
+                <h2 class='fw-semibold mb-4'>Information we collect</h2>
+                <article class='mb-4'>
+                    The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
+                </article>
+                <article class='mb-4'>
+                    If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+                </article>
+                <article class='mb-4'>
+                    When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.
+                </article>
+                <h2 class='fw-semibold mb-4'>How we use your information</h2>
+                <article class='mb-4'>
+                    We use the information we collect in various ways, including to:
+                </article>
+                <ul class='mb-4'>
+                    <li>
+                        <article class='mb-1'>
+                            Provide, operate, and maintain our website
+                        </article>
+                    </li>
+                    <li>
+                        <article class='mb-1'>
+                            Improve, personalize, and expand our website
+                        </article>
+                    </li>
+                    <li>
+                        <article class='mb-1'>
+                            Understand and analyze how you use our website
+                        </article>
+                    </li>
+                    <li>
+                        <article class='mb-1'>
+                            Develop new products, services, features, and functionality
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes
+                        </article>
+                    </li>
+                    <li>
+                        <article class='mb-1'>
+                            Send you emails
+                        </article>
+                    </li>
+                    <li>
+                        <article class='mb-1'>
+                            Find and prevent fraud
+                        </article>
+                    </li>
+                </ul>
+                <h2 class='fw-semibold mb-4'>Log Files</h2>
+                <article class="mb-4">
+                    Sushma Belleza follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.
+                </article>
+                <h2 class='fw-semibold mb-4'>Advertising Partners Privacy Policies</h2>
+                <article class="mb-4">
+                    You may consult this list to find the Privacy Policy for each of the advertising partners of Sushma Belleza.
+                </article>
+                <article class="mb-4">
+                    Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Sushma Belleza, which are sent directly to users’ browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+                </article>
+                <article class="mb-4">
+                    Note that Sushma Belleza has no access to or control over these cookies that are used by third-party advertisers.
+                </article>
+                <h2 class='fw-semibold mb-4'>Third Party Privacy Policies</h2>
+                <article class="mb-4">
+                    Sushma Belleza’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+                </article>
+                <article class="mb-4">
+                    You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites.
+                </article>
+                <h2 class='fw-semibold mb-4'>CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+                <article class="mb-4">
+                    Under the CCPA, among other rights, California consumers have the right to:
+                </article>
+                <article class="mb-4">
+                    Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.
+                </article>
+                <article class="mb-4">
+                    Request that a business delete any personal data about the consumer that a business has collected.
+                </article>
+                <article class="mb-4">
+                    Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.
+                </article>
+                <article class="mb-4">
+                    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+                </article>
+                <h2 class='fw-semibold mb-4'>GDPR Data Protection Rights</h2>
+                <article class="mb-4">
+                    We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:
+                </article>
+                <article class="mb-4">
+                    The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.
+                </article>
+                <article class="mb-4">
+                    The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+                </article>
+                <article class="mb-4">
+                    The right to erasure – You have the right to request that we erase your personal data, under certain conditions.
+                </article>
+                <article class="mb-4">
+                    The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.
+                </article>
+                <article class="mb-4">
+                    The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
+                </article>
+                <article class="mb-4">
+                    The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+                </article>
+                <article class="mb-4">
+                    If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+                </article>
+                <h2 class='fw-semibold mb-4'>Children’s Information</h2>
+                <article class="mb-4">
+                    Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+                </article>
+                <article class="mb-4">
+                    Sushma Belleza does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+                </article>
+                <h2 class='fw-semibold mb-4'>Changes to This Privacy Policy</h2>
+                <article class="mb-4">
+                    We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.
+                </article>
+                <article class="mb-4">
+                    Our Privacy Policy was created with the help of the Privacy Policy Generator.
+                </article>
+                <h2 class='fw-semibold mb-4'>Contact Us</h2>
+                <article class="mb-4">
+                    If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+                </article>
+            </div>
+        </div>
+        <section class="container-fluid documents px-2 overflow-hidden">
+            <div class="row w-100 mx-auto gx-3">
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">brochure</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downBrochureBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download brochure
+                            </article>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">price list</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downPriceListBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download price list
+                            </article>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">site & floor plans</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downSiteFloorBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download site & floor plans
+                            </article>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid py-3 px-4 text-capitalize d-flex align-items-center justify-content-lg-start gap-lg-5 justify-content-md-between gap-2 justify-content-between footerLinks">
+                    <a href="home.html#overview" class="text-white text-decoration-none">overview</a>
+                    <a href="home.html#product" class="text-white text-decoration-none">product</a>
+                    <a href="amenities.html" class="text-white text-decoration-none">amenities</a>
+                    <a href="home.html#locationMap" class="text-white text-decoration-none">location map</a>
+                    <a href="home.html#floorPlans" class="text-white text-decoration-none">floor plans</a>
+                    <a href="gallery.html" class="text-white text-decoration-none">gallery</a>
+                    <a href="price-list.html" class="text-white text-decoration-none">price list</a>
+                    <a href="home.html#faq" class="text-white text-decoration-none">faq</a>
+                    <a href="home.html#contact" class="text-white text-decoration-none">contact</a>
+            </div>
+            <div class="container-fluid position-relative footerTop">
+                    <div class="footerTopOverlay w-100 h-100 opacity-75 position-absolute top-0 start-0"></div>
+                    <div class="pt-5 text-center position-relative z-1">
+                        <figure class="my-lg-5 my-3">
+                            <a href="home.html">
+                                <img src="images/logo-mob.png" alt="footer logo" />
+                            </a>
+                        </figure>
+                        <span class="d-block mb-lg-5 mb-3">
+                            <a href="tel:+91 89680 66698" class="text-white text-decoration-none fw-semibold">+91 89680 66698</a>
+                        </span>
+                    </div>
+                    <div class="row w-100 mx-auto position-relative z-1 pb-3">
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">sales office</h5>
+                                <span class="fs-6">Sushma Belleza, Sushma Downtown Office, PR-7 Airport Road, Zirakpur, Punjab 160055</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">product category</h5>
+                                <figure class="w-100">
+                                    <img src="images/gold-series.png" alt="gold-series" class="w-50" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">CREDAI member</h5>
+                                <figure class="w-100">
+                                    <img src="images/credai.png" alt="credai" class="w-50" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">RERA approved</h5>
+                                <figure class="w-100">
+                                    <img src="images/Rera_Design3b_03.png" alt="Rera_Design3b_03.png" class="w-50" />
+                                </figure>
+                                <figcaption class="fw-medium">
+                                    PBRERA-SAS79-PR0680
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid p-5 bg-black text-white footerBottom">
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <figure class="mb-3">
+                            <img src="images/logo-mob.png" alt="footer logo" class="w-100" />
+                        </figure>
+                        <span class="d-block mb-lg-0 mb-3">
+                            <i class="fa-solid fa-location-arrow me-2"></i>Sushma Downtown Office, PR-7 Airport Road, Zirakpur, Punjab 160055
+                            <i class="fa-solid fa-phone-flip me-2 ms-3"></i><a href="tel:+91 89680 66698" class="text-white text-decoration-none">+91 89680 66698</a>
+                            <i class="fa-solid fa-phone-flip me-2 ms-3"></i><a href="tel:+91 99880 10405" class="text-white text-decoration-none">+91 99880 10405</a>
+                        </span>
+                        <span class="d-block mb-lg-5 mb-3">
+                            <i class="fa-regular fa-copyright"></i> 2023 SUSHMA. All Right Reserved.
+                        </span>
+                        <div class="d-flex gap-lg-5 justify-content-lg-start justify-content-md-start gap-md-4 justify-content-between">
+                            <a href="disclaimer.html" class="text-capitalize text-white text-decoration-none text-center">disclaimer</a>
+                            <a href="privacy-policy.html" class="text-capitalize text-white text-decoration-none text-center">privacy policy</a>
+                            <a href="terms-and-condition.html" class="text-capitalize text-white text-decoration-none text-center">terms and condition</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 text-lg-end text-center">
+                        <h5 class="text-white text-capitalize fw-semibold mb-3">sushma service partner</h5>
+                        <figure class="ms-lg-auto me-lg-0 mx-auto mb-4">
+                            <img src="images/Realty-Nivesh-Dark-Background-2.png" alt="Realty-Nivesh-Dark-Background-2.png" class="w-100" />
+                        </figure>
+                        <span class="fw-medium">
+                            PBRERA-SAS79-REA1009
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        let body=document.querySelector("body")
+
+        let navbar=document.querySelector("header");
+        let enquireOpen=document.querySelector("#enquireNow");
+        let overlay=document.querySelector(".overlay");
+        let enquireForm=document.querySelector(".enquireForm");
+        let enquireClose=document.querySelector("#enquireClose");
+        enquireOpen.addEventListener("click",(()=>{
+            enquireForm.classList.add("showEnquire")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        enquireClose.addEventListener("click",(()=>{
+            enquireForm.classList.remove("showEnquire")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            enquireForm.classList.remove("showEnquire")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY>=50){
+                navbar.classList.add("headerfix")
+            }
+            else{
+                navbar.classList.remove("headerfix")
+            }
+        })
+        
+        let downBrochureForm=document.querySelector("#downBrochureForm")
+        let downBrochureBtn=document.querySelector("#downBrochureBtn")
+        let downBrochureClose=document.querySelector("#downBrochureClose")
+        downBrochureBtn.addEventListener("click",(()=>{
+            downBrochureForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        downBrochureClose.addEventListener("click",(()=>{
+            downBrochureForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            downBrochureForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+
+        let priceListForm=document.querySelector("#priceListForm")
+        let downPriceListBtn=document.querySelector("#downPriceListBtn")
+        let priceListClose=document.querySelector("#priceListClose")
+        downPriceListBtn.addEventListener("click",(()=>{
+            priceListForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        priceListClose.addEventListener("click",(()=>{
+            priceListForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            priceListForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        
+        let siteFloorForm=document.querySelector("#siteFloorForm")
+        let downSiteFloorBtn=document.querySelector("#downSiteFloorBtn")
+        let siteFloorClose=document.querySelector("#siteFloorClose")
+        downSiteFloorBtn.addEventListener("click",(()=>{
+            siteFloorForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        siteFloorClose.addEventListener("click",(()=>{
+            siteFloorForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            siteFloorForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+    </script>
+</html>

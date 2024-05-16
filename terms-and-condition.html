@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home 9 - Sushma Belleza</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+    <body>
+        <div class="text-uppercase py-4 px-2 text-white rounded-start-3 border-end-0 fw-bolder position-fixed end-0 z-2" id="enquireNow">
+            enquire here
+        </div>
+        <div class="overlay"></div>
+        <div class="enquireForm">
+            <div class="modal-header p-3 border-bottom">
+                <button type="button" class="btn-close" id="enquireClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-5">
+                <form>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder ">full name <span class="text-danger fw-semibold">*</span></label>
+                        <input type="text" class="w-100 border-0">
+                    </div>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder">email address <span class="text-danger fw-semibold">*</span></label>
+                        <input type="email" class="w-100 border-0">
+                    </div>
+                    <div class="">
+                        <label class="d-block text-capitalize fw-bolder">phone number <span class="text-danger fw-semibold">*</span></label>
+                        <input type="tel" placeholder="+91" class="w-100 border-0">
+                    </div>
+                    <button class="text-capitalize text-white fw-medium py-2 px-3 border-0">enquire now</button>
+                </form>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="downBrochureForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download brochure</h4>
+                <button type="button" class="btn-close" id="downBrochureClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto py-5 px-4 g-4">
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <label class="fw-bolder">I'm interested in</label>
+                        <select class="w-100 px-2">
+                            <option>3 BHK</option>
+                            <option>4 BHK</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="priceListForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download price list</h4>
+                <button type="button" class="btn-close" id="priceListClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto p-5 g-4">
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="fw-bolder">message</label>
+                        <textarea class="d-block w-100"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">get quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white rounded-3" id="siteFloorForm">
+            <div class="modal-header py-2 px-3 align-items-center border-bottom">
+                <h4 class="text-capitalize mb-0">download site & floor plan</h4>
+                <button type="button" class="btn-close" id="siteFloorClose" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body row w-100 mx-auto p-5 g-4">
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">first name <sup class="text-danger">*</sup></label>
+                        <input type="text" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">email address <sup class="text-danger">*</sup></label>
+                        <input type="email" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="text-capitalize fw-bolder">phone number <sup class="text-danger">*</sup></label>
+                        <input type="tel" class="w-100 px-2">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div>
+                        <label class="fw-bolder">message</label>
+                        <textarea class="d-block w-100"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="pe-3">
+                        <button class="text-capitalize text-white py-2 border-0 w-100">get quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="container-fluid ps-lg-5 pe-lg-0 px-3 z-2">
+            <nav class="navbar navbar-expand-lg align-items-center">
+                <a class="navbar-brand me-5" href="home.html">
+                    <figure class="m-0">
+                        <img src="images/logo.png" alt="logo" class="w-100 h-100">
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"   aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav text-uppercase gap-3">
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#overview">overview</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#product">product</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="amenities.html">amenities</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#locationMap">location map</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#floorPlans">floor plans</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="gallery.html">gallery</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="price-list.html">price list</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#faq">faq</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-white" href="home.html#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="container-fluid disclaimerBanner">
+            <div class="container h-100 d-flex flex-wrap align-items-center">
+                <div>
+                    <h1 class="text-uppercase text-white fw-semibold w-100">terms and conditions</h1>
+                    <article class="text-white">
+                        <a href="home.html" class="text-uppercase text-white text-decoration-none">home</a>
+                        &nbsp; - &nbsp;
+                        <span class="text-uppercase text-decoration-underline">
+                            terms and conditions
+                        </span>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid disclaimerMain bg-white">
+            <div class="container">
+                <article class="mb-4">
+                    Welcome to sushmabelleza!
+                </article>
+                <article class="mb-4">
+                    These terms and conditions outline the rules and regulations for the use of Sushma Belleza’s Website, located at https://sushmaelementa.realtynivesh.com.
+                </article>
+                <article class="mb-4">
+                    By accessing this website we assume you accept these terms and conditions. Do not continue to use sushmabelleza if you do not agree to take all of the terms and conditions stated on this page.
+                </article>
+                <article class="mb-4">
+                    The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: “Client”, “You” and “Your” refers to you, the person log on this website and compliant to the Company’s terms and conditions. “The Company”, “Ourselves”, “We”, “Our” and “Us”, refers to our Company. “Party”, “Parties”, or “Us”, refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of in. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.
+                </article>
+                <h2 class="fw-semibold mb-4">Cookies</h2>
+                <article class="mb-4">
+                    We employ the use of cookies. By accessing sushmabelleza, you agreed to use cookies in agreement with the Sushma Belleza’s Privacy Policy.
+                </article>
+                <article class="mb-4">
+                    Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.
+                </article>
+                <h2 class="fw-semibold mb-4">License</h2>
+                <article class="mb-4">
+                    Unless otherwise stated, Sushma Belleza and/or its licensors own the intellectual property rights for all material on sushmabelleza. All intellectual property rights are reserved. You may access this from sushmabelleza for your own personal use subjected to restrictions set in these terms and conditions.
+                </article>
+                <article class="mb-4">
+                    You must not:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            Republish material from sushmabelleza
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            Sell, rent or sub-license material from sushmabelleza
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            Reproduce, duplicate or copy material from sushmabelleza
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            Redistribute content from sushmabelleza
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    This Agreement shall begin on the date hereof. Our Terms and Conditions were created with the help of the Free Terms and Conditions Generator.
+                </article>
+                <article class="mb-4">
+                    Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. Sushma Belleza does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of Sushma Belleza,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Sushma Belleza shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.
+                </article>
+                <article class="mb-4">
+                    Sushma Belleza reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.
+                </article>
+                <article class="mb-4">
+                    You warrant and represent that:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    You hereby grant Sushma Belleza a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.
+                </article>
+                <h2 class="fw-semibold mb-4">Hyperlinking to our Content</h2>
+                <article class="mb-4">
+                    The following organizations may link to our Website without prior written approval:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            Government agencies;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            Search engines;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            News organizations;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.
+                </article>
+                <article class="mb-4">
+                    We may consider and approve other link requests from the following types of organizations:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            commonly-known consumer and/or business information sources;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            dot.com community sites;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            associations or other groups representing charities;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            online directory distributors;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            internet portals;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            accounting, law and consulting firms; and
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            educational institutions and trade associations.
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of Sushma Belleza; and (d) the link is in the context of general resource information.
+                </article>
+                <article class="mb-4">
+                    These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.
+                </article>
+                <article class="mb-4">
+                    If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to Sushma Belleza. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.
+                </article>
+                <article class="mb-4">
+                    Approved organizations may hyperlink to our Website as follows:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            By use of our corporate name; or
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            By use of the uniform resource locator being linked to; or
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    No use of Sushma Belleza’s logo or other artwork will be allowed for linking absent a trademark license agreement.
+                </article>
+                <h2 class="fw-semibold mb-4">iFrames</h2>
+                <article class="mb-4">
+                    Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.
+                </article>
+                <h2 class="fw-semibold mb-4">Content Liability</h2>
+                <article class="mb-4">
+                    We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.
+                </article>
+                <h2 class="fw-semibold mb-4">Reservation of Rights</h2>
+                <article class="mb-4">
+                    We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.
+                </article>
+                <h2 class="fw-semibold mb-4">Removal of links from our website</h2>
+                <article class="mb-4">
+                    If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.
+                </article>
+                <article class="mb-4">
+                    We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.
+                </article>
+                <h2 class="fw-semibold mb-4">Disclaimer</h2>
+                <article class="mb-4">
+                    To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:
+                </article>
+                <ul class="mb-4">
+                    <li class="mb-1">
+                        <article>
+                            limit or exclude our or your liability for death or personal injury;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            limit or exclude our or your liability for fraud or fraudulent misrepresentation;
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            limit any of our or your liabilities in any way that is not permitted under applicable law; or
+                        </article>
+                    </li>
+                    <li class="mb-1">
+                        <article>
+                            exclude any of our or your liabilities that may not be excluded under applicable law.
+                        </article>
+                    </li>
+                </ul>
+                <article class="mb-4">
+                    The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.
+                </article>
+                <article class="mb-4">
+                    As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.
+                </article>
+            </div>
+        </div>
+        <section class="container-fluid documents px-2 overflow-hidden">
+            <div class="row w-100 mx-auto gx-3">
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">brochure</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downBrochureBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download brochure
+                            </article>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">price list</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downPriceListBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download price list
+                            </article>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 mx-lg-0 col-md-7 mx-md-auto col-12">
+                    <div class="bg-white rounded-4 p-4 text-center documentCard">
+                        <i class="fa-regular fa-file-pdf fs-1"></i>
+                        <h4 class="fw-medium text-capitalize my-4">site & floor plans</h4>
+                        <h6 class="fw-normal mb-4">Brochure contains the all the neccessary information about the Sushma Belleza project.</h6>
+                        <button class="text-capitalize text-white py-3 px-4 border-0 rounded-3" id="downSiteFloorBtn">
+                            <article>
+                                <i class="fa-solid fa-file-arrow-down"></i> 
+                                download site & floor plans
+                            </article>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid py-3 px-4 text-capitalize d-flex align-items-center justify-content-lg-start gap-lg-5 justify-content-md-between gap-2 justify-content-between footerLinks">
+                    <a href="home.html#overview" class="text-white text-decoration-none">overview</a>
+                    <a href="home.html#product" class="text-white text-decoration-none">product</a>
+                    <a href="amenities.html" class="text-white text-decoration-none">amenities</a>
+                    <a href="home.html#locationMap" class="text-white text-decoration-none">location map</a>
+                    <a href="home.html#floorPlans" class="text-white text-decoration-none">floor plans</a>
+                    <a href="gallery.html" class="text-white text-decoration-none">gallery</a>
+                    <a href="price-list.html" class="text-white text-decoration-none">price list</a>
+                    <a href="home.html#faq" class="text-white text-decoration-none">faq</a>
+                    <a href="home.html#contact" class="text-white text-decoration-none">contact</a>
+            </div>
+            <div class="container-fluid position-relative footerTop">
+                    <div class="footerTopOverlay w-100 h-100 opacity-75 position-absolute top-0 start-0"></div>
+                    <div class="pt-5 text-center position-relative z-1">
+                        <figure class="my-lg-5 my-3">
+                            <a href="home.html">
+                                <img src="images/logo-mob.png" alt="footer logo" />
+                            </a>
+                        </figure>
+                        <span class="d-block mb-lg-5 mb-3">
+                            <a href="tel:+91 89680 66698" class="text-white text-decoration-none fw-semibold">+91 89680 66698</a>
+                        </span>
+                    </div>
+                    <div class="row w-100 mx-auto position-relative z-1 pb-3">
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">sales office</h5>
+                                <span class="fs-6">Sushma Belleza, Sushma Downtown Office, PR-7 Airport Road, Zirakpur, Punjab 160055</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">product category</h5>
+                                <figure class="w-100">
+                                    <img src="images/gold-series.png" alt="gold-series" class="w-50" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12 border-end">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">CREDAI member</h5>
+                                <figure class="w-100">
+                                    <img src="images/credai.png" alt="credai" class="w-50" />
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="text-white text-center">
+                                <h5 class="text-capitalize mb-3">RERA approved</h5>
+                                <figure class="w-100">
+                                    <img src="images/Rera_Design3b_03.png" alt="Rera_Design3b_03.png" class="w-50" />
+                                </figure>
+                                <figcaption class="fw-medium">
+                                    PBRERA-SAS79-PR0680
+                                </figcaption>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid p-5 bg-black text-white footerBottom">
+                <div class="row">
+                    <div class="col-lg-9 col-12">
+                        <figure class="mb-3">
+                            <img src="images/logo-mob.png" alt="footer logo" class="w-100" />
+                        </figure>
+                        <span class="d-block mb-lg-0 mb-3">
+                            <i class="fa-solid fa-location-arrow me-2"></i>Sushma Downtown Office, PR-7 Airport Road, Zirakpur, Punjab 160055
+                            <i class="fa-solid fa-phone-flip me-2 ms-3"></i><a href="tel:+91 89680 66698" class="text-white text-decoration-none">+91 89680 66698</a>
+                            <i class="fa-solid fa-phone-flip me-2 ms-3"></i><a href="tel:+91 99880 10405" class="text-white text-decoration-none">+91 99880 10405</a>
+                        </span>
+                        <span class="d-block mb-lg-5 mb-3">
+                            <i class="fa-regular fa-copyright"></i> 2023 SUSHMA. All Right Reserved.
+                        </span>
+                        <div class="d-flex gap-lg-5 justify-content-lg-start justify-content-md-start gap-md-4 justify-content-between">
+                            <a href="disclaimer.html" class="text-capitalize text-white text-decoration-none text-center">disclaimer</a>
+                            <a href="privacy-policy.html" class="text-capitalize text-white text-decoration-none text-center">privacy policy</a>
+                            <a href="terms-and-condition.html" class="text-capitalize text-white text-decoration-none text-center">terms and condition</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 text-lg-end text-center">
+                        <h5 class="text-white text-capitalize fw-semibold mb-3">sushma service partner</h5>
+                        <figure class="ms-lg-auto me-lg-0 mx-auto mb-4">
+                            <img src="images/Realty-Nivesh-Dark-Background-2.png" alt="Realty-Nivesh-Dark-Background-2.png" class="w-100" />
+                        </figure>
+                        <span class="fw-medium">
+                            PBRERA-SAS79-REA1009
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        let body=document.querySelector("body")
+
+        let navbar=document.querySelector("header");
+        let enquireOpen=document.querySelector("#enquireNow");
+        let overlay=document.querySelector(".overlay");
+        let enquireForm=document.querySelector(".enquireForm");
+        let enquireClose=document.querySelector("#enquireClose");
+        enquireOpen.addEventListener("click",(()=>{
+            enquireForm.classList.add("showEnquire")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        enquireClose.addEventListener("click",(()=>{
+            enquireForm.classList.remove("showEnquire")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            enquireForm.classList.remove("showEnquire")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+
+        window.addEventListener("scroll",()=>{
+            if(window.scrollY>=50){
+                navbar.classList.add("headerfix")
+            }
+            else{
+                navbar.classList.remove("headerfix")
+            }
+        })
+
+        let downBrochureForm=document.querySelector("#downBrochureForm")
+        let downBrochureBtn=document.querySelector("#downBrochureBtn")
+        let downBrochureClose=document.querySelector("#downBrochureClose")
+        downBrochureBtn.addEventListener("click",(()=>{
+            downBrochureForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        downBrochureClose.addEventListener("click",(()=>{
+            downBrochureForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            downBrochureForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+
+        let priceListForm=document.querySelector("#priceListForm")
+        let downPriceListBtn=document.querySelector("#downPriceListBtn")
+        let priceListClose=document.querySelector("#priceListClose")
+        downPriceListBtn.addEventListener("click",(()=>{
+            priceListForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        priceListClose.addEventListener("click",(()=>{
+            priceListForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            priceListForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        
+        let siteFloorForm=document.querySelector("#siteFloorForm")
+        let downSiteFloorBtn=document.querySelector("#downSiteFloorBtn")
+        let siteFloorClose=document.querySelector("#siteFloorClose")
+        downSiteFloorBtn.addEventListener("click",(()=>{
+            siteFloorForm.classList.add("showBookNowForm")
+            overlay.classList.add("showOverlay")
+            body.classList.add("overflow-hidden")
+        }));
+        siteFloorClose.addEventListener("click",(()=>{
+            siteFloorForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+        overlay.addEventListener("click",(()=>{
+            siteFloorForm.classList.remove("showBookNowForm")
+            overlay.classList.remove("showOverlay")
+            body.classList.remove("overflow-hidden")
+        }));
+    </script>
+</html>
